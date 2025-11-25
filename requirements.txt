@@ -1,5 +1,0 @@
-Python 3.10 
-PyTorch 1.13.1 (CPU hoặc GPU) 
-Torchtext 0.14.1 
-SpaCy 3.7.2 
-Jupyter Notebook
