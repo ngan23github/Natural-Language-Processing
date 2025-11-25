@@ -6,31 +6,40 @@ Xây dựng mô hình Seq2Seq cơ bản bằng LSTM *không dùng thư viện se
 
 ### 🛠️ Hướng dẫn cài đặt
 
+
+#### Tạo môi trường mới và kích hoạt
 ```bash
-#!/bin/bash
-
-# 1️⃣ Tạo môi trường mới và kích hoạt
 conda create -n nlp_env python=3.10 -y
+```
 
-### Kích hoạt môi trường
+#### Kích hoạt môi trường
+```bash
 conda activate nlp_env
+```
 
-# 2️⃣ Cài PyTorch + Torchtext (CPU)
+#### Cài PyTorch + Torchtext (CPU)
+```bash
 pip install torch==1.13.1 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cpu
+```
 
-# Hoặc nếu dùng GPU với CUDA 11.7:
+#### Hoặc nếu dùng GPU với CUDA 11.7:
+```bash
 pip install torch==1.13.1+cu117 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cu117
-
-# 3️⃣ Cài SpaCy 3.7.2
+```
+#### Cài SpaCy 3.7.2
+```bash
 pip install spacy==3.7.2
-
-# 4️⃣ Cài model SpaCy tiếng Anh
+```
+#### Cài model SpaCy tiếng Anh
+```bash
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-
-# 5️⃣ Cài model SpaCy tiếng Pháp
+```
+#### Cài model SpaCy tiếng Pháp
+```bash
 pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
-
-# 6️⃣ Cài Jupyter Notebook
+```
+#### Cài Jupyter Notebook
+```bash
 conda install jupyter -y
 ```
 
