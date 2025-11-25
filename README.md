@@ -4,31 +4,29 @@
 ### 🧠 Mục tiêu
 Xây dựng mô hình Seq2Seq cơ bản bằng LSTM *không dùng thư viện seq2seq có sẵn*, thực hiện dịch máy Anh–Pháp.
 
-### Cách cài đặt môi trường
-1. Tạo môi trường mới
-```conda create -n nlp_env python=3.10 -y```
+### Tạo môi trường mới
+conda create -n nlp_env python=3.10 -y
 
-- Kích hoạt môi trường:
+### Kích hoạt môi trường
+conda activate nlp_env
 
-```conda activate nlp_env```
+### Cài PyTorch + Torchtext (CPU)
+pip install torch==1.13.1 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cpu
 
-2. Cài PyTorch + Torchtext (CPU)
-```pip install torch==1.13.1 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cpu```
-Cài PyTorch + Torchtext (GPU)
-```pip install torch==1.13.1+cu117 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cu117```
+### Cài PyTorch + Torchtext (GPU, CUDA 11.7)
+pip install torch==1.13.1+cu117 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cu117
 
-3. Cài SpaCy 3.7.2
-```pip install spacy==3.7.2```
+### Cài SpaCy 3.7.2
+pip install spacy==3.7.2
 
-4. Cài model SpaCy tiếng Anh + tiếng Pháp
+### Cài model SpaCy tiếng Anh
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 
-Tiếng Anh:
-```pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl```
-Tiếng Pháp:
-```pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl```
+### Cài model SpaCy tiếng Pháp
+pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
 
-5. Cài Jupyter Notebook
-```conda install jupyter -y```
+### Cài Jupyter Notebook
+conda install jupyter -y
 
 ### 🧩 Kiến trúc
 - **Encoder:** 2-layer LSTM (embedding 256, hidden 512)
