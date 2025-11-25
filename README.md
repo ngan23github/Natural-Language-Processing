@@ -1,32 +1,38 @@
 # Neural Machine Translation (English → French)
 ## Model: Encoder–Decoder LSTM (Fixed Context Vector)
 
-### 🧠 Mục tiêu
+#### 🧠 Mục tiêu
 Xây dựng mô hình Seq2Seq cơ bản bằng LSTM *không dùng thư viện seq2seq có sẵn*, thực hiện dịch máy Anh–Pháp.
 
-### Tạo môi trường mới
+### 🛠️ Hướng dẫn cài đặt
+
+```bash
+#!/bin/bash
+
+# 1️⃣ Tạo môi trường mới và kích hoạt
 conda create -n nlp_env python=3.10 -y
 
 ### Kích hoạt môi trường
 conda activate nlp_env
 
-### Cài PyTorch + Torchtext (CPU)
+# 2️⃣ Cài PyTorch + Torchtext (CPU)
 pip install torch==1.13.1 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cpu
 
-### Cài PyTorch + Torchtext (GPU, CUDA 11.7)
+# Hoặc nếu dùng GPU với CUDA 11.7:
 pip install torch==1.13.1+cu117 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cu117
 
-### Cài SpaCy 3.7.2
+# 3️⃣ Cài SpaCy 3.7.2
 pip install spacy==3.7.2
 
-### Cài model SpaCy tiếng Anh
+# 4️⃣ Cài model SpaCy tiếng Anh
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 
-### Cài model SpaCy tiếng Pháp
+# 5️⃣ Cài model SpaCy tiếng Pháp
 pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
 
-### Cài Jupyter Notebook
+# 6️⃣ Cài Jupyter Notebook
 conda install jupyter -y
+```
 
 ### 🧩 Kiến trúc
 - **Encoder:** 2-layer LSTM (embedding 256, hidden 512)
