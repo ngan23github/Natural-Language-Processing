@@ -7,7 +7,7 @@ Xây dựng mô hình Seq2Seq cơ bản bằng LSTM *không dùng thư viện se
 ### 🛠️ Hướng dẫn cài đặt
 
 
-#### Tạo môi trường mới và kích hoạt
+#### Tạo môi trường mới
 ```bash
 conda create -n nlp_env python=3.10 -y
 ```
