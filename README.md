@@ -21,26 +21,39 @@ conda activate nlp_env
 ```bash
 pip install torch==1.13.1 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cpu
 ```
-
 #### Hoặc nếu dùng GPU với CUDA 11.7:
 ```bash
 pip install torch==1.13.1+cu117 torchtext==0.14.1 --index-url https://download.pytorch.org/whl/cu117
 ```
+
+#### Cài Numpy 1.23.5
+```bash
+pip install numpy==1.23.5
+```
+
 #### Cài SpaCy 3.7.2
 ```bash
 pip install spacy==3.7.2
 ```
+
 #### Cài model SpaCy tiếng Anh
 ```bash
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 ```
+
 #### Cài model SpaCy tiếng Pháp
 ```bash
 pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
 ```
+
 #### Cài Jupyter Notebook
 ```bash
 conda install jupyter -y
+```
+
+#### Cài Matplotlib 3.7.3
+```bash
+pip install matplotlib==3.7.3
 ```
 
 ### 🧩 Kiến trúc
