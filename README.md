@@ -1,11 +1,10 @@
-# Neural Machine Translation (English → French)
+# Machine Translation (English → French)
 ## Model: Encoder–Decoder LSTM (Fixed Context Vector)
 
 #### 🧠 Mục tiêu
 Xây dựng mô hình Seq2Seq cơ bản bằng LSTM *không dùng thư viện seq2seq có sẵn*, thực hiện dịch máy Anh–Pháp.
 
 ### 🛠️ Hướng dẫn cài đặt
-
 
 #### Tạo môi trường mới
 ```bash
@@ -72,11 +71,13 @@ pip install matplotlib==3.7.3
 5. Dịch thử câu tiếng Anh → tiếng Pháp
 
 ### 🧮 Kết quả mẫu
-| Epoch | Train Loss | Val Loss | BLEU |
+| Epoch | Train Loss | Val Loss | Time |
 |:------|:-----------:|:--------:|:----:|
-| 1 | 3.85 | 3.62 | 18.4 |
-| 2 | 3.12 | 2.98 | 23.5 |
-| 3 | 2.70 | 2.60 | 27.1 |
+| 1 | 3.85 | 3.62 | 120.9s |
+| 2 | 3.12 | 2.98 | 119.9s |
+| 3 | 2.70 | 2.60 | 122.3s |
+
+BLEU on val: 0.16610838872315464
 
 ### 📚 Tài liệu tham khảo
 - Sutskever et al., *Sequence to Sequence Learning with Neural Networks*, 2014.
